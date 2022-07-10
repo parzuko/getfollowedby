@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      alliance: ['Alliance', 'sans-serif'],
+      august: ['August', 'sans-serif']
+    }
   },
   plugins: [],
 }
