@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "August";
+        src: url("/fonts/August_Bold.ttf") format('truetype');
+    }
+
+    @font-face {
+        font-family: "Alliance";
+        font-weight: normal;
+        src: url("/fonts/Alliance_1_Light.otf") format('opentype');
+    }
+
+    @font-face {
+        font-family: "Alliance";
+        font-weight: bold;
+        src: url("/fonts/Alliance_1_Bold.otf") format('opentype');
+    }
+}
