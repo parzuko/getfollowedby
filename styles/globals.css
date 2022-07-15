@@ -2,21 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  color: white;
+  background: rgba(56,139,253,0.4);;
+}
+
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
+  background-color: #0e1116;
+}
+
 @layer base {
-    @font-face {
-        font-family: "August";
-        src: url("/fonts/August_Bold.ttf") format('truetype');
-    }
+  @font-face {
+    font-family: "August";
+    src: url("/fonts/August_Bold.ttf") format("truetype");
+  }
 
-    @font-face {
-        font-family: "Alliance";
-        font-weight: normal;
-        src: url("/fonts/Alliance_1_Light.otf") format('opentype');
-    }
+  @font-face {
+    font-family: "Alliance";
+    font-weight: normal;
+    src: url("/fonts/Alliance_1_Light.otf") format("opentype");
+  }
 
-    @font-face {
-        font-family: "Alliance";
-        font-weight: bold;
-        src: url("/fonts/Alliance_1_Bold.otf") format('opentype');
-    }
+  @font-face {
+    font-family: "Alliance";
+    font-weight: bold;
+    src: url("/fonts/Alliance_1_Bold.otf") format("opentype");
+  }
 }
