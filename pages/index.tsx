@@ -5,7 +5,6 @@ import { CTAButtons } from "../components/CTAButtons";
 import { FollowedByNav } from "../components/FolowedByNav";
 import { Footer } from "../components/Footer";
 import { GlowingDemoGIF } from "../components/GlowingDemoGIF";
-import { ProductFeatures } from "../components/ProductFeatures";
 
 const Home: NextPage = () => {
     return (
