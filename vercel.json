@@ -1,0 +1,14 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/download/chrome",
+        "destination": "https://chrome.google.com/webstore/detail/followed-by/hhjhlgbgeckeecplimppmofblgicnmpa"
+      },
+      {
+        "source": "/code",
+        "destination": "https://github.com/parzuko/followedby"
+      }
+    ]
+}
