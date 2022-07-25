@@ -1,22 +1,15 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 
+import { Container } from "../components/Container";
 import { CTAButtons } from "../components/CTAButtons";
 import { FollowedByNav } from "../components/FolowedByNav";
-import { Footer } from "../components/Footer";
 import { GlowingDemoGIF } from "../components/GlowingDemoGIF";
 
 const Home: NextPage = () => {
     return (
-        <main className="flex min-h-screen flex-col text-white">
-            <Head>
-                <title>Followed By</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
+        <Container>
             <FollowedByNav />
             <section className="mx-auto mt-10 flex max-w-4xl flex-col justify-center px-8 text-center lg:mt-12">
-                
                 <h2 className="text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
                     {/* Your AI pair programmer */}
                     Your mutual programmer
@@ -31,8 +24,7 @@ const Home: NextPage = () => {
                 <CTAButtons />
                 <GlowingDemoGIF />
             </section>
-            <Footer/>
-        </main>
+        </Container>
     );
 };
 
