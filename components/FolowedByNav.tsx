@@ -3,10 +3,10 @@ interface FollowedByNavProps {
 }
 const FollowedByNav = ({ isFooter = false }: FollowedByNavProps) => {
     const textSizeStyle = isFooter
-        ? `text-2xl sm:text-3xl md:text-4xl`
-        : `p-4 text-3xl sm:p-6 sm:text-4xl md:p-8 md:text-5xl`;
+        ? `text-3xl sm:text-4xl`
+        : `p-4 text-4xl sm:p-6 sm:text-5xl md:p-8 md:text-6xl`;
     const iconSizeStyle = isFooter
-        ? `h-5 w-5 sm:h-7 sm:w-7 md:h-9 md:w-9`
+        ? `h-8 w-8 sm:h-9 sm:h-9  md:h-10 md:w-10`
         : `h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12`;
     return (
         <nav className={`font-august flex items-center ${textSizeStyle}`}>
