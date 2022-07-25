@@ -21,12 +21,12 @@ const Button = ({ isPrimary = false, href, ctaText }: ButtonProps) => {
 const CTAButtons = () => (
     <div className="flex flex-col sm:flex-row justify-center sm:space-x-3 mt-6 select-none">
         <Button
-            href="https://github.com/parzuko/follwedby"
+            href="/download/chrome"
             isPrimary
             ctaText="Add to Browser"
         />
         <Button
-            href="https://github.com/parzuko/follwedby"
+            href="/code"
             ctaText="Source Code"
         />
     </div>
