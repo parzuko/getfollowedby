@@ -9,6 +9,7 @@ const GlowingDemoGIF = () => (
             alt="Followed By Extension"
             width={840}
             height={462}
+            quality={100}
         />
     </div>
 );
