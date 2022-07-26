@@ -14,7 +14,7 @@ const Container = props => {
     };
     return (
         <>
-            <main className="flex min-h-[84vh] md:min-h-screen flex-col">
+            <main className="flex min-h-[85vh] md:min-h-[93vh] xl:min-h-[90vh] flex-col">
                 <Head>
                     <title>{meta.title}</title>
                     <meta name="robots" content="follow, index" />
