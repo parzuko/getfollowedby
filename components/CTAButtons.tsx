@@ -1,3 +1,6 @@
+declare const InstallTrigger: any;
+const isFirefox = typeof InstallTrigger !== "undefined";
+
 interface ButtonProps {
     isPrimary?: boolean;
     href: string;
@@ -21,14 +24,11 @@ const Button = ({ isPrimary = false, href, ctaText }: ButtonProps) => {
 const CTAButtons = () => (
     <div className="flex flex-col sm:flex-row justify-center sm:space-x-3 mt-6 select-none">
         <Button
-            href="/download/chrome"
+            href={isFirefox ? "/download/firefox" : "/download/chrome"}
             isPrimary
             ctaText="Add to Browser"
         />
-        <Button
-            href="/code"
-            ctaText="Source Code"
-        />
+        <Button href="/code" ctaText="Source Code" />
     </div>
 );
 export { CTAButtons };
