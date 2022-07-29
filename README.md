@@ -1,23 +1,42 @@
-# Next.js + Tailwind CSS Example
+# Followed By - Website
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+ever visit someone’s GitHub profile and wonder — hmm, do we know each other? well here’s an easy fix to traverse the builders social graph: ✨ [getfollowedby.xyz](https://getfollowedby.xyz) ✨
 
-## Deploy your own
+`followedby` uses GitHub’s public API to fetch mutual followers for every profile you visit, straight to the profile page!
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+<div align="center">
+  <img src="public/assets/landing.png" width=700 />
+</div>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## 🫣 design inspiration?
 
-## How to use
+while designing the extension, I wanted it to feel as close to a product by GitHub itself. this design choice was inspired by my own opinionated mindset about third party injected scripts (?). following (haha) this principle; `getfollowedby`'s design is ~~inspired~~ stolen from [GitHub's Copilot](https://github.com/features/copilot)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+<details>
+  <summary>FollowedBy Homepage  vs Github Copilot</summary>
+  <table align='center'>
+    <tr>
+        <td> <img src="public/assets/copilot_landing.png" alt="Drawing"  style="width: 500px;"/> </td>
+        <td> <img src="public/assets/gfb_landing.png" alt="Drawing" style="width: 500px;"/> </td>
+    </tr>
+  </table>
+</details>
+
+## 🤓 what's the tech?
+
+1. [`TailwindCSS`](https://tailwindcss.com)
+2. [`TypeScript`](https://www.typescriptlang.org/)
+3. [`NextJS`](https://nextjs.org/)
+
+## 🛠 want to install `getfollowedby`, locally?
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+git clone https://github.com/parzuko/getfollowedby.git
+cd getfollowedby
+
+yarn && yarn dev # installs packages + starts server at port 3000!
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+made for fun, and maybe for myself ✌️
+
+[say hi](https://twitter.com/parzuko) :)
