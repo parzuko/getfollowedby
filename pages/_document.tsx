@@ -5,16 +5,16 @@ const Document = () => {
         <Html lang="en">
             <Head>
                 <link
-                    rel="preload"
+                    as="style"
+                    rel="stylesheet preload prefetch"
                     href="/fonts/Alliance_1_Light.otf"
-                    as="font"
                     type="font/otf"
                     crossOrigin="anonymous"
                 />
                 <link
-                    rel="preload"
+                    as="style"
+                    rel="stylesheet preload prefetch"
                     href="/fonts/August_Bold.ttf"
-                    as="font"
                     type="font/ttf"
                     crossOrigin="anonymous"
                 />
