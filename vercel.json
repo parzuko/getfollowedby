@@ -7,6 +7,10 @@
         "destination": "https://chrome.google.com/webstore/detail/followed-by/hhjhlgbgeckeecplimppmofblgicnmpa"
       },
       {
+        "source": "/download/firefox",
+        "destination": "https://addons.mozilla.org/firefox/addon/followed-by/"
+      },
+      {
         "source": "/code",
         "destination": "https://github.com/parzuko/followedby"
       }
