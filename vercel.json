@@ -13,6 +13,10 @@
       {
         "source": "/code",
         "destination": "https://github.com/parzuko/followedby"
+      },
+      {
+        "source": "/website",
+        "destination": "https://github.com/parzuko/getfollowedby"
       }
     ]
 }
