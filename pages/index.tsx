@@ -5,7 +5,11 @@ import { CTAButtons } from "../components/CTAButtons";
 import { FollowedByNav } from "../components/FolowedByNav";
 import { GlowingDemoGIF } from "../components/GlowingDemoGIF";
 
-const Home: NextPage = () => {
+interface HomeProps {
+    userAgent?: string;
+}
+
+const Home: NextPage<HomeProps> = ({ userAgent }) => {
     return (
         <Container>
             <FollowedByNav />
@@ -21,11 +25,16 @@ const Home: NextPage = () => {
                     from your browser.
                 </p>
 
-                <CTAButtons />
+                <CTAButtons userAgent={userAgent} />
                 <GlowingDemoGIF />
             </section>
         </Container>
     );
+};
+
+Home.getInitialProps = async ({ req }) => {
+    const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
+    return { userAgent };
 };
 
 export default Home;
